@@ -20,6 +20,22 @@ background-color:#787878;
 float:left;
 }
 
+#title {
+position: fixed;
+top: 0px;
+left: 0px;
+padding: 10px;
+margin: 0px;
+width: 100%;
+background-color: azure;
+text-align: center;
+z-index: 10;
+font-family: 'Georgia', 'sans-serif'; 
+font-weight: normal;
+font-style: normal; 
+font-size: 36px; 
+}
+
 #clear{
 clear:both; 
 }
