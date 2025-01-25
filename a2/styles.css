@@ -20,6 +20,11 @@ background-color:#787878;
 float:left;
 }
 
+img {
+ margin-left: 5px;
+ margin-top:10px;
+ }
+
 #title {
 position: fixed;
 top: 0px;
