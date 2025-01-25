@@ -1,9 +1,12 @@
 body {
-				font-family: Helvetica, Arial, sans-serif;
-				color: #665544;
-				padding: 22px;}
+	font-family: Helvetica, Arial, sans-serif;
+	color: #665544;
+	padding: 22px;}
 h1, h2, p {
-				padding: 12px;
-				line-height: 2em;}
+	font-family: 'DancingScriptRegular';
+	font-weight: normal;
+	font-style: normal;
+	padding: 12px;
+	line-height: 2em;}
 i, a, a:hover, a:visited {
-				color: #665544;}
+	color: #665544;}
