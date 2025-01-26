@@ -14,7 +14,7 @@ header {
     text-align: center;
     background-color: #445297; /* Background color */
     color: white; /* Text color */
-    font-family: 'DancingScriptRegular'; /* Font style */
+    font-family: 'Bitter', serif; /* Font style */
     padding: 20px 0; /* Adds top and bottom margin inside the header */
     margin-bottom: 20px; /* Adds spacing below the header */
 }
