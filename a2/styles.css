@@ -54,3 +54,14 @@ font-size: 36px;
 .clear{
 clear:both; 
 }
+
+footer {
+ text-align: center; 
+ padding: 20px;
+}
+p { 
+font-size: 2vmin;
+color: rgb(0, 0, 0);
+margin-right: 5px; 
+}
+
