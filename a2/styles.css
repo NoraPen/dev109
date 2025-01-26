@@ -10,10 +10,18 @@ background-size: 130vmin;
   padding: 20px;
 }
 
-h1 {
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 20px;
+header {
+    text-align: center;
+    background-color: #445297; /* Background color */
+    color: white; /* Text color */
+    font-family: 'DancingScriptRegular'; /* Font style */
+    padding: 20px 0; /* Adds top and bottom margin inside the header */
+    margin-bottom: 20px; /* Adds spacing below the header */
+}
+
+header h1 {
+    font-size: 3rem; /* Adjust font size specifically for h1 */
+    margin: 0; /* Removes default margins on h1 */
 }
 
 #container {
@@ -58,6 +66,18 @@ img {
 footer {
   text-align: center;
   margin-top: 20px;
+}
+
+/* Header styling */
+#page-header {
+  background-color: #445297; /* Background color */
+  color: #edf0ff; /* Text color */
+  padding: 20px;
+  margin: 20px 0; /* Margin around the header */
+  text-align: center;
+  font-family: "Bitter", sans-serif; /* Font from Font Library */
+  font-size: 2.5rem; /* Font size */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
 }
 .clear {
   clear: both;
