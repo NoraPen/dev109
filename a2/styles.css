@@ -9,19 +9,19 @@ background-size: 130vmin;
   background-attachment: fixed;
   padding: 20px;
 }
-
+/* Header styling */
 header {
     text-align: center;
-    background-color: #445297; /* Background color */
-    color: white; /* Text color */
-    font-family: 'Bitter', serif; /* Font style */
-    padding: 20px 0; /* Adds top and bottom margin inside the header */
-    margin-bottom: 20px; /* Adds spacing below the header */
+    background-color: #445297; 
+    color: white; 
+    font-family: 'Bitter', serif; 
+    padding: 20px 0; 
+    margin-bottom: 20px; 
 }
-
+/* Title styling */
 header h1 {
-    font-size: 3rem; /* Adjust font size specifically for h1 */
-    margin: 0; /* Removes default margins on h1 */
+    font-size: 3rem; 
+    margin: 0; 
 }
 
 #container {
@@ -68,17 +68,7 @@ footer {
   margin-top: 20px;
 }
 
-/* Header styling */
-#page-header {
-  background-color: #445297; /* Background color */
-  color: #edf0ff; /* Text color */
-  padding: 20px;
-  margin: 20px 0; /* Margin around the header */
-  text-align: center;
-  font-family: "Bitter", sans-serif; /* Font from Font Library */
-  font-size: 2.5rem; /* Font size */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
-}
+
 .clear {
   clear: both;
 }
