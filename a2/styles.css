@@ -1,77 +1,83 @@
 /* Basic styling */
 body {
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;/* Makes Background Light gray */
+  font-family: Arial, sans-serif;/*Sets page font*/
+
+  /* Background image settings */
   background-image: url('https://images.unsplash.com/photo-1536514498073-50e69d39c6cf?q=80&w=3500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-position: top;
 background-size: 130vmin;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding: 20px;
+  background-repeat: no-repeat; /* Stops image from repeating */
+  background-attachment: fixed;/* Keeps the image fixed while scrolling */
+  
+  padding: 20px;/* Adds spacing*/
 }
 /* Header styling */
 header {
-    text-align: center;
-    background-color: #445297; 
-    color: white; 
-    font-family: 'Bitter', serif; 
-    padding: 20px 0; 
-    margin-bottom: 20px; 
+    text-align: center;/*centers text*/
+    background-color: #445297; /* Dark blue background */
+    color: white; /* Sets text color to white */
+    font-family: 'Bitter', serif; /* Sets to font from library*/
+    padding: 20px 0; /* Adds spacing aroundthe text */
+    margin-bottom: 20px; /* Adds space below header */
 }
 /* Title styling */
 header h1 {
-    font-size: 3rem; 
-    margin: 0; 
+    font-size: 3rem; /* Title font size */
+    margin: 0; /* Removes margin */
+
 }
 
 #container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  display: flex;/* Adds automatic size changes when screen is differenct sizes  */
+  flex-direction: column;/* Arranges into columns */
+  justify-content: center;/* Centers board vertically */
+  align-items: center; /* Centers board horizontally */
+  margin-top: 20px; /* Adds space above the board */
 }
 
 /* Styling each row */
 .row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex;/* Adds automatic size changes when screen is differenct sizes  */
+  justify-content: center;/* Centers squares vertically */
+  align-items: center;/* Centers squares horizontally */
 }
 
 /* Chessboard square styles */
 .white, .black {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 50px;/* Sets the width of each square */
+  height: 50px;/* Sets the height of each square */
+  display: flex;/* Adds automatic size changes when screen is differenct sizes  */
+  justify-content: center;/* Centers item inside the square */
+  align-items: center;/* Centers item inside the square */
 }
 
+/* Light square color */
 .white {
-  background-color: #edf0ff; /* light square color */
+  background-color: #edf0ff; /* Sets color to light blue*/
 }
 
+/* Dark square color */
 .black {
-  background-color: #445297; /* dark square color */
+  background-color: #445297; /* Sets color to dark blue  */
 }
 
 /* Image styling */
 img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 80%;/* Limits image width to 80% of container */
+  max-height: 80%;/* Limits image height to 80% of container */
 }
 
 /* Footer styling */
 footer {
-  text-align: center;
-  margin-top: 20px;
-  background-color: #445297; 
-  padding: 20px;
-  color: white; 
+  text-align: center;/* Centers text */
+  margin-top: 20px;/* Adds space above the footer */
+  background-color: #445297;  /* Dark blue background color */
+  padding: 20px;/* Adds padding inside footer */
+  color: white; /* Sets text color to white */
 }
 
 
 .clear {
-  clear: both;
+  clear: both;/* Stops elements from wrapping around floating elements */
 }
