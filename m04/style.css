@@ -19,8 +19,11 @@ float: left;
 margin: 1%;}
 
 .column3 {
-background-color:#E6E6FA;
 margin-right: 0%;}
+
+.column3 {
+background-color: #e6e6fa;
+}
 
 li {
 display: inline;
