@@ -47,7 +47,7 @@ main {
     width: 31.3%;
     float: left;
     margin: 1%;
-    min-height: 150px;
+     padding-bottom: 50px;
 }
 
 .column1 {
