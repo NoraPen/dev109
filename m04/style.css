@@ -24,10 +24,17 @@ nav li {
 }
 
 nav, footer {
-    background-color: #efefef;
+    
     padding: 0.5em 0;
 }
 
+nav {
+    background-color: #ffdab6;
+}
+    
+footer{
+    background-color: #afeeee;
+}
 main {
     overflow: auto;
 }
@@ -35,13 +42,23 @@ main {
 #feature {
     height: 10em;
     margin-bottom: 1em;
-    background-color: #efefef;
+    background-color: #ffe4e1;
 }
 
 .column1, .column2, .column3 {
     width: 31.3%;
     float: left;
     margin: 1%;
+}
+
+.column1 {
+    background-color: #e0ffff;
+    margin-right: 0%;
+}
+
+.column2 {
+    background-color: #fff0f5;
+    margin-right: 0%;
 }
 
 .column3 {
