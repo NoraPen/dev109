@@ -51,6 +51,10 @@ main {
     height: 10em;
     margin-bottom: 1em;
     background-color: #ffe4e1;
+    background-image: url("https://png.pngtree.com/png-clipart/20230417/original/pngtree-tree-line-art-png-image_9059996.png");
+    background-size:contain;
+    background-position: right;
+    background-repeat:no-repeat;
 }
 
 .column1, .column2, .column3 {
