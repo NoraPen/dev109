@@ -14,10 +14,14 @@ body {
 
 header {
     padding: 1em;
+    
+}
+
+h1{
     font-family: 'LemonRegular';
     font-weight: normal;
     font-style: normal;
-}
+}   
 
 nav ul {
     padding: 0;
