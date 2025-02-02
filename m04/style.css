@@ -1,5 +1,5 @@
 * {
-    font-family: Arial, Verdana, sans-serif;
+    
     color: #000000;
     text-align: center;
 }
@@ -8,6 +8,7 @@ body {
     width: 90%;
     margin: 0 auto;
     background-image: url('https://cdn.wallpapersafari.com/95/47/dqtBCf.jpg');
+    font-family: Arial, Verdana, sans-serif;
 }
 
 
