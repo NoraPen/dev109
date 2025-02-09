@@ -3,6 +3,7 @@ var table = 3;             // Unit of table
 operator = GetValueFromUser("operator");
 table = GetValueFromUser("table")
 
+
 // Write the message into the page
 var el = document.getElementById('blackboard');
 el.innerHTML = GetTableContent(operator, table);
