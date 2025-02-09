@@ -40,6 +40,6 @@ function GetTableContent(table) {
       msg += i + ' x ' + table + ' = ' + (i * table) + '<br />';
       i++;
     }
-  }
+  
   return msg;
 }
