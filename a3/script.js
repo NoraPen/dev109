@@ -22,7 +22,7 @@ function upLeft(height, colorEven, colorOdd, symbol) {
         var line = "";
         // Add spaces before symbols to align left
         for (var j = 1; j <= height - i; j++) {
-            line += " "; // White space
+            line += " "; // White space to shift symbols
         }
         // Add symbols
         for (var j = 1; j <= i; j++) {
@@ -43,7 +43,7 @@ function upRight(height, colorEven, colorOdd, symbol) {
         var line = "";
         // Add spaces to push symbols to the right
         for (var j = 1; j <= height - i; j++) {
-            line += " "; // White space
+            line += " "; // White space to shift symbols
         }
         // Add symbols
         for (var j = 1; j <= i; j++) {
@@ -64,7 +64,7 @@ function downLeft(height, colorEven, colorOdd, symbol) {
         var line = "";
         // Add spaces before symbols to align left
         for (var j = 1; j <= height - i; j++) {
-            line += " "; // White space
+            line += " "; // White space to shift symbols
         }
         // Add symbols
         for (var j = 1; j <= i; j++) {
@@ -85,7 +85,7 @@ function downRight(height, colorEven, colorOdd, symbol) {
         var line = "";
         // Add spaces to push symbols to the right
         for (var j = 1; j <= height - i; j++) {
-            line += " "; // White space
+            line += " "; // White space to shift symbols
         }
         // Add symbols
         for (var j = 1; j <= i; j++) {
