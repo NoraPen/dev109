@@ -8,11 +8,12 @@
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en//face/lemon" type="text/css">
 </head>
 <body>
-     
+
+    <!-- Header section for title and navigation menu -->
     <header>
         <h1>Contact Me</h1>
         <nav>
-            
+             <!--  navigation links -->
             <ul>
                 <li><a href="index.html" target="_blank">Home</a></li>
                 <li><a href="about.html" target="_blank">About</a></li>
@@ -25,16 +26,34 @@
         </nav>
     </header>
 
-    
+    <!-- Main  section -->
     <main>
         <div id="feature">
             
             <h4>Form</h4>
-          
+          <!-- Contact Form -->
+            <form action="thankyou.html" method="get" name="myContact">
+               <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="5" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+                
+            </form>
         </div>
 
       
-
+<!-- Footer section with copyright-->
     <footer>
         <p>© Copyright 2024</p>
     </footer>
