@@ -11,6 +11,10 @@ body {
     font-family: Arial, Verdana, sans-serif;
 }
 
+main {
+    overflow: auto;
+}
+
 
 header {
     padding: 1em;
