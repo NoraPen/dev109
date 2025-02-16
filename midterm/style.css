@@ -50,13 +50,17 @@ nav {
 
 /* Format img in feature section */
 #feature {
-    height: 10em;
+    height: auto;
     margin-bottom: 1em;
     background-color: #ffe4e1;
     background-image: url("https://png.pngtree.com/png-clipart/20230417/original/pngtree-tree-line-art-png-image_9059996.png");
     background-size:contain;
     background-position: right;
     background-repeat:no-repeat;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    max-width: 600px; 
 }
 
 
