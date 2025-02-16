@@ -1,60 +1,108 @@
-// var rHeight =5;
-// var colorEven = "orange";
-// var colorOdd = "black";
-// var symbol ="*";
-
 function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
-upRight(pHeight, pColorEven, pColorOdd, pSymbol);
-downRight(pHeight, pColorEven, pColorOdd, pSymbol);
-
+    topLeft(pHeight, pColorEven, pColorOdd, pSymbol);
+    topRight(pHeight, pColorEven, pColorOdd, pSymbol);
+    bottomLeft(pHeight, pColorEven, pColorOdd, pSymbol);
+    bottomRight(pHeight, pColorEven, pColorOdd, pSymbol);
 }
 
-function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
-var rLine ="";
-for (i=0;i<pHeight;i++){
-rLine +="<p>";
-//Create each line on the Rhombus
-for(j=0;j<=i;j++){
-
-//Is the position even or odd so we change the color
-if (j%2)
-//even
-rLine +="<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
-else
-//odd
-rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
-
-}
-rLine +="</p>";
-// console.log(rLine);
-
-}
-
-document.getElementById("upRight").innerHTML = rLine;
-}
-
-function downRight(pHeight, pColorEven, pColorOdd, pSymbol){
-var rLine ="";
-for (i=pHeight;i > 0;i--){
-rLine +="<p>";
-//Create each line on the Rhombus
-for(j=0;j<i;j++){
-
-//Is the position even or odd so we change the color
-if (j%2)
-//even
-rLine +="<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
-else
-//odd
-rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
-
-}
-rLine +="</p>";
-// console.log(rLine);
-
+function topRight(pHeight, pColorEven, pColorOdd, pSymbol) {
+    var rLine = "";
+    for (var i = 0; i < pHeight; i++) {
+        rLine += "<p>";
+        
+        // White spaces
+        for (var j = 0; j < pHeight - i - 1; j++) {
+            rLine += "<span style='color: white;'> </span>"; // White symbols invisible in white background
+        }
+        
+        //  symbols with alternating colors
+        for (var j = 0; j <= i; j++) {
+            if (j % 2) {
+                rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
+            } else {
+                rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
+            }
+        }
+        
+        rLine += "</p>";
+    }
+    
+    document.getElementById("topRight").innerHTML = rLine;
 }
 
-document.getElementById("downRight").innerHTML = rLine;
-}
+function bottomRight(pHeight, pColorEven, pColorOdd, pSymbol) {
+    var rLine = "";
+    for (var i = pHeight; i > 0; i--) {
+        rLine += "<p>";
+        
+        // White spaces
+        for (var j = 0; j < pHeight - i; j++) {
+            rLine += "<span style='color: white;'> </span>"; // White symbols
+        }
+        
+        //symbols with alternating colors
+        for (var j = 0; j < i; j++) {
+            if (j % 2) {
+                rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
+            } else {
+                rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
+            }
+        }
+        
+        rLine += "</p>";
+    }
 
  
+    
+    document.getElementById("bottomRight").innerHTML = rLine;
+}
+
+function bottomLeft(pHeight, pColorEven, pColorOdd, pSymbol) {
+    var rLine = "";
+    for (var i = pHeight; i > 0; i--) {
+        rLine += "<p>";
+        
+        // white spaces
+        for (var j = 0; j < pHeight - i; j++) {
+            rLine += "<span style='color: white;'> </span>"; // White symbols
+        }
+        
+        // symbols with alternating colors
+        for (var j = 0; j < i; j++) {
+            if (j % 2) {
+                rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
+            } else {
+                rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
+            }
+        }
+        
+        rLine += "</p>";
+    }
+    
+    document.getElementById("bottomLeft").innerHTML = rLine;
+}
+
+function topLeft(pHeight, pColorEven, pColorOdd, pSymbol) {
+    var rLine = "";
+    for (var i = 0; i < pHeight; i++) {
+        rLine += "<p>";
+        
+        // white spaces
+        for (var j = 0; j < pHeight - i - 1; j++) {
+            rLine += "<span style='color: white;'> </span>"; // White symbols 
+        }
+        
+        // symbols with alternating colors
+        for (var j = 0; j <= i; j++) {
+            if (j % 2) {
+                rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
+            } else {
+                rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
+            }
+        }
+        
+        rLine += "</p>";
+    }
+    
+    document.getElementById("topLeft").innerHTML = rLine;
+}
