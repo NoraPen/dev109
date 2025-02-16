@@ -1,101 +1,58 @@
-function createRhombus() {
-    var height = document.getElementById('rHeight').value;
-    var colorEven = document.getElementById('colorEven').value;
-    var colorOdd = document.getElementById('colorOdd').value;
-    var symbol = document.getElementById('symbol').value;
+// var rHeight =5;
+// var colorEven = "orange";
+// var colorOdd = "black";
+// var symbol ="*";
 
-    // Clear previous rhombus
-    document.getElementById("upLeft").innerHTML = '';
-    document.getElementById("upRight").innerHTML = '';
-    document.getElementById("downLeft").innerHTML = '';
-    document.getElementById("downRight").innerHTML = '';
+function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
+upRight(pHeight, pColorEven, pColorOdd, pSymbol);
+downRight(pHeight, pColorEven, pColorOdd, pSymbol);
 
-    upLeft(height, colorEven, colorOdd, symbol);
-    upRight(height, colorEven, colorOdd, symbol);
-    downLeft(height, colorEven, colorOdd, symbol);
-    downRight(height, colorEven, colorOdd, symbol);
 }
 
-function upLeft(height, colorEven, colorOdd, symbol) {
-    var result = "";
-    for (var i = 1; i <= height; i++) {
-        var line = "";
-        // Add spaces before symbols to align left
-        for (var j = 1; j <= height - i; j++) {
-            line += " "; // White space to shift symbols
-        }
-        // Add symbols
-        for (var j = 1; j <= i; j++) {
-            if (j % 2 === 0) {
-                line += `<span style='color:${colorEven};'>${symbol}</span>`;
-            } else {
-                line += `<span style='color:${colorOdd};'>${symbol}</span>`;
-            }
-        }
-        result += line + "<br>";
-    }
-    document.getElementById("upLeft").innerHTML = result;
+function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
+var rLine ="";
+for (i=0;i<pHeight;i++){
+rLine +="<p>";
+//Create each line on the Rhombus
+for(j=0;j<=i;j++){
+
+//Is the position even or odd so we change the color
+if (j%2)
+//even
+rLine +="<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
+else
+//odd
+rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
+
+}
+rLine +="</p>";
+// console.log(rLine);
+
 }
 
-function upRight(height, colorEven, colorOdd, symbol) {
-    var result = "";
-    for (var i = 1; i <= height; i++) {
-        var line = "";
-        // Add spaces to push symbols to the right
-        for (var j = 1; j <= height - i; j++) {
-            line += " "; // White space to shift symbols
-        }
-        // Add symbols
-        for (var j = 1; j <= i; j++) {
-            if (j % 2 === 0) {
-                line += `<span style='color:${colorEven};'>${symbol}</span>`;
-            } else {
-                line += `<span style='color:${colorOdd};'>${symbol}</span>`;
-            }
-        }
-        result += line + "<br>";
-    }
-    document.getElementById("upRight").innerHTML = result;
+document.getElementById("upRight").innerHTML = rLine;
 }
 
-function downLeft(height, colorEven, colorOdd, symbol) {
-    var result = "";
-    for (var i = height; i >= 1; i--) {
-        var line = "";
-        // Add spaces before symbols to align left
-        for (var j = 1; j <= height - i; j++) {
-            line += " "; // White space to shift symbols
-        }
-        // Add symbols
-        for (var j = 1; j <= i; j++) {
-            if (j % 2 === 0) {
-                line += `<span style='color:${colorEven};'>${symbol}</span>`;
-            } else {
-                line += `<span style='color:${colorOdd};'>${symbol}</span>`;
-            }
-        }
-        result += line + "<br>";
-    }
-    document.getElementById("downLeft").innerHTML = result;
+function downRight(pHeight, pColorEven, pColorOdd, pSymbol){
+var rLine ="";
+for (i=pHeight;i > 0;i--){
+rLine +="<p>";
+//Create each line on the Rhombus
+for(j=0;j<i;j++){
+
+//Is the position even or odd so we change the color
+if (j%2)
+//even
+rLine +="<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
+else
+//odd
+rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
+
+}
+rLine +="</p>";
+// console.log(rLine);
+
 }
 
-function downRight(height, colorEven, colorOdd, symbol) {
-    var result = "";
-    for (var i = height; i >= 1; i--) {
-        var line = "";
-        // Add spaces to push symbols to the right
-        for (var j = 1; j <= height - i; j++) {
-            line += " "; // White space to shift symbols
-        }
-        // Add symbols
-        for (var j = 1; j <= i; j++) {
-            if (j % 2 === 0) {
-                line += `<span style='color:${colorEven};'>${symbol}</span>`;
-            } else {
-                line += `<span style='color:${colorOdd};'>${symbol}</span>`;
-            }
-        }
-        result += line + "<br>";
-    }
-    document.getElementById("downRight").innerHTML = result;
+document.getElementById("downRight").innerHTML = rLine;
 }
