@@ -92,9 +92,9 @@ nav {
     margin-right: 0%;/* Remove right margin */
 }
 
-
-
-
+.column {
+    width: 45%;
+}
 
 footer {
     margin-top: 1em;/* Add top margin */
