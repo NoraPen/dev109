@@ -8,7 +8,7 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
         
         // Add white spaces for left alignment
         for (let j = 0; j < pHeight - i; j++) {
-            rLine += "<span style='color:" + white + ";'>" + "*" + "</span>";
+            rLine += "<span style='color:" + white + ";'>" + pSymbol + "</span>";
         }
         
         // Add symbols 
@@ -46,7 +46,7 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
         
         // Add white spaces 
         for (let j = 0; j < pHeight - i; j++) {
-            rLine += "<span style='color:" + white + ";'>" + "*" + "</span>";
+            rLine += "<span style='color:" + white + ";'>" + pSymbol + "</span>";
         }
         
         // Add symbols 
