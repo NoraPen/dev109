@@ -5,6 +5,12 @@
     text-align: center;
 }
 
+
+/* Main  section */
+main {
+    overflow: auto; /* mkae sure content overflows correctly */
+}
+
 /* Set backround image, center body content */
 body {
     width: 90%;
