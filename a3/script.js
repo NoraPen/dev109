@@ -32,7 +32,7 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
         rLine += "</p>";
     }
 
-    // Combined Bottom section
+    // Bottom section
     for (let i = pHeight - 1; i > 0; i--) {
         rLine += "<p>";
 
@@ -50,7 +50,7 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
             }
         }
 
-        // ABottom Right
+        // Bottom Right
         for (let j = 0; j < i; j++) {
             if (j % 2 === 0) {
                 rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
