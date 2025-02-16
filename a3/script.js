@@ -1,90 +1,35 @@
 function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
-    var rLine = "";
-    var white = "#ffffff"; // Color for white spaces
+upRight(pHeight, pColorEven, pColorOdd, pSymbol);
+//downRight(pHeight, pColorEven, pColorOdd, pSymbol);
 
-    // Top Left 
-    for (let i = 1; i <= pHeight; i++) {
-        rLine += "<p>";
-        
-        // Add white spaces for left alignment
-        for (let j = 0; j < pHeight - i; j++) {
-            rLine += "<span style='color:" + white + ";'>" + " " + "</span>";
-        }
-        
-        // Add symbols 
-        for (let j = 0; j < i; j++) {
-            if (j % 2 === 0) {
-                rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
-            } else {
-                rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
-            }
-        }
+}
 
-        rLine += "</p>";
-    }
 
-    // Top Right 
-    for (let i = 1; i <= pHeight; i++) {
-        rLine += "<p>";
-        
-        // Add spaces first
-        for (let j = 0; j < pHeight - i; j++) {
-            rLine += "<span style='color:" + white + ";'>" + " " + "</span>";
-        }
-        
-        // Add symbols 
-        for (let j = 0; j < i; j++) {
-            if (j % 2 === 0) {
-                rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
-            } else {
-                rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
-            }
-        }
+function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
+var rLine ="";
+var white = "#ffffff";
+for (i=0;i<pHeight;i++){
+rLine +="<p>";
+//Create each line on the Rhombus
+for(j=0;j<=i;j++){
+    rLine +="<span style='color:" + white + ";'>" + pSymbol +"</span>";
+/*
+//Is the position even or odd so we change the color
+if (j%2)
+//even
+rLine +="<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
+else
+//odd
+rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
+*/
+}
 
-        rLine += "</p>";
-    }
 
-    // Bottom Left 
-    for (let i = pHeight - 1; i > 0; i--) {
-        rLine += "<p>";
-        
-        // Add white spaces 
-        for (let j = 0; j < pHeight - i; j++) {
-            rLine += "<span style='color:" + white + ";'>" + " " + "</span>";
-        }
-        
-        // Add symbols 
-        for (let j = 0; j < i; j++) {
-            if (j % 2 === 0) {
-                rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
-            } else {
-                rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
-            }
-        }
+    
+rLine +="</p>";
+// console.log(rLine);
 
-        rLine += "</p>";
-    }
+}
 
-    // Bottom Right 
-    for (let i = pHeight - 1; i > 0; i--) {
-        rLine += "<p>";
-        
-        // Add spaces
-        for (let j = 0; j < pHeight - i; j++) {
-            rLine += "<span style='color:" + white + ";'>" + " " + "</span>";
-        }
-        
-        // Add symbols
-        for (let j = 0; j < i; j++) {
-            if (j % 2 === 0) {
-                rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
-            } else {
-                rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
-            }
-        }
-
-        rLine += "</p>";
-    }
-
-    document.getElementById("rhombus").innerHTML = rLine;
+document.getElementById("upRight").innerHTML = rLine;
 }
