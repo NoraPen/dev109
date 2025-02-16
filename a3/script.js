@@ -27,10 +27,6 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
     for (let i = 1; i <= pHeight; i++) {
         rLine += "<p>";
         
-        // Add spaces first
-        for (let j = 0; j < pHeight - i; j++) {
-            rLine += "<span style='color:" + white + ";'>" + "*" + "</span>";
-        }
         
         // Add symbols 
         for (let j = 0; j < i; j++) {
@@ -69,10 +65,7 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
     for (let i = pHeight - 1; i > 0; i--) {
         rLine += "<p>";
         
-        // Add spaces
-        for (let j = 0; j < pHeight - i; j++) {
-            rLine += "<span style='color:" + white + ";'>" + "*" + "</span>";
-        }
+        
         
         // Add symbols
         for (let j = 0; j < i; j++) {
