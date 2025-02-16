@@ -5,7 +5,8 @@
 
 function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
 upRight(pHeight, pColorEven, pColorOdd, pSymbol);
-//downRight(pHeight, pColorEven, pColorOdd, pSymbol);
+downRight(pHeight, pColorEven, pColorOdd, pSymbol);
+upLeft(pHeight, pColorEven, pColorOdd, pSymbol);  
 }
 
 function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
@@ -57,4 +58,37 @@ rLine +="</p>";
 
 document.getElementById("downRight").innerHTML = rLine;
 }
+
+
+function upLeft(pHeight, pColorEven, pColorOdd, pSymbol) {
+    var rLine = "";
+    var white = "#ffffff"; // Define the color of the white spaces
+    for (let i = pHeight; i > 0; i--) {
+        rLine += "<p>";
+        
+        // Create each line of the rhombus with white spaces first
+        for (let j = 0; j < i; j++) {
+            rLine += "<span style='color:" + white + ";'>" + " " + "</span>";
+        }
+        
+        // Add the colored symbols
+        for(j=0;j<i;j++){
+
+          //Is the position even or odd so we change the color
+            if (j%2)
+            //even
+            rLine +="<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
+            else
+            //odd
+            rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
+
+}
+        
+        rLine += "</p>";
+    }
+    return rLine; // Return the final output
+}
+
+
+
 
