@@ -1,9 +1,11 @@
+/* Set text to black and centered */
 * {
     
     color: #000000;
     text-align: center;
 }
 
+/* Set backround image, center body content */
 body {
     width: 90%;
     margin: 0 auto;
@@ -11,16 +13,13 @@ body {
     font-family: Arial, Verdana, sans-serif;
 }
 
-main {
-    overflow: auto;
-}
-
 
 header {
-    padding: 1em;
+    padding: 1em;/* Add padding to the header */
     
 }
 
+/* Use font from font librarys */
 h1{
     font-family: 'LemonRegular';
     font-weight: normal;
@@ -28,9 +27,11 @@ h1{
 }   
 
 nav ul {
-    padding: 0;
-    list-style: none;
+    padding: 0;/* Remove default padding */
+    list-style: none;/* Remove default list styling */
 }
+
+ /* Add padding to list items */
 
 nav li {
     display: inline;
@@ -39,15 +40,15 @@ nav li {
 
 nav, footer {
     
-    padding: 0.5em 0;
+    padding: 0.5em 0;/* Add padding to navigation and footer */
 }
 
 nav {
-    background-color: #ffdab6;
+    background-color: #ffdab6;/* Set background color */
 }
     
 
-
+/* Format img in feature section */
 #feature {
     height: 10em;
     margin-bottom: 1em;
@@ -60,41 +61,32 @@ nav {
 
 
 .column1, .column2, .column3 {
-    width: 31.3%;
-    float: left;
-    margin: 1%;
-    padding-bottom: 100px;
+    width: 31.3%;/* Set each column width to 31.3% */
+    float: left;/* Float the columns to the left */
+    margin: 1%;/* Add margin around columns */
+    padding-bottom: 100px;/* Add bottom padding */
 }
 
 .column1 {
-    background-color: #e0ffff;
-    margin-right: 0%;
+    background-color: #e0ffff;/* Set background color */
+    margin-right: 0%;/* Remove right margin */
 }
 
 .column2 {
-    background-color: #d8bfd8;
-    margin-right: 0%;
+    background-color: #e0ffff;/* Set background color */
+    margin-right: 0%;/* Remove right margin */
 }
 
 .column3 {
-    background-color: #E6E6FA;
-    margin-right: 0%;
+    background-color: #E6E6FA;/* Set background color */
+    margin-right: 0%;/* Remove right margin */
 }
 
-.column {
-    padding: 20px;
-    background-color: #fff;
-}
 
-.column4 {
-    width: 48%;  
-    background-color: #e0ffff;
-   
-}
 
 
 
 footer {
-    margin-top: 1em;
-    background-color: #afeeee;
+    margin-top: 1em;/* Add top margin */
+    background-color: #afeeee;/* Set footer background color */
 }
