@@ -106,7 +106,16 @@ nav {
     border: 2px solid #ddd;
     border-radius: 8px;
 }
+#validation-content {
+    display: flex; /* Use flexbox to align columns side by side */
+    justify-content: space-between; /* Add space between the columns */
+    gap: 20px; /* Add gap between columns */
+}
 
+#validation-content .column {
+    width: 45%; /* Adjust the width for two columns */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
 footer {
     margin-top: 1em;/* Add top margin */
     background-color: #afeeee;/* Set footer background color */
