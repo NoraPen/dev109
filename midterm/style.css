@@ -43,11 +43,6 @@ nav {
 }
     
 
-main {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-}
 
 #feature {
     height: 10em;
