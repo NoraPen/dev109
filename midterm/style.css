@@ -79,6 +79,12 @@ main {
     margin-right: 0%;
 }
 
+.column4, column5 {
+    width: 48%;
+    padding: 20px;
+    background-color: #e0ffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 footer {
     margin-top: 1em;
