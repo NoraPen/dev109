@@ -97,7 +97,7 @@ function emailValidation(){
     }
 
 //PHONE
-Phone.addEventListener('blur', phoneValidation, false);
+phone.addEventListener('blur', phoneValidation, false);
 function phoneValidation() {
         var validPhone = false;
         var errorMessages = "";
