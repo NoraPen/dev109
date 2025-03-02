@@ -28,3 +28,8 @@
 // Insert the new element into its position.
   position.appendChild(newEl);
 
+var input = document.getElementById("itemInput");
+input.addEventListener("keypress", function(event) {
+       if (event.key === "Enter") {
+             addNewItem(); 
+              }
