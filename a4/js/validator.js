@@ -9,8 +9,6 @@ function isValid() {
         return false;
 }
 
-document.getElementById('FirstName').addEventListener('blur', firstName, false);
-document.getElementById('LastName').addEventListener('blur', lastName, false);
 
 // FIRST NAME
 FirstName.addEventListener('blur', firstName, false);
