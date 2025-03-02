@@ -11,7 +11,7 @@ function isValid() {
 
 
 // FIRST NAME
-document.getElementById('FirstName').addEventListener('blur', firstName, false);
+FirstName.addEventListener('blur', firstName, false);
 function firstName(){
     //1) Create variable
     var validFirstname=false;
@@ -41,7 +41,7 @@ function firstName(){
 
 
 //LAST NAME 
-document.getElementById('LastName').addEventListener('blur', lastName, false);
+LastName.addEventListener('blur', lastName, false);
 function lastName(){
     //1) Create variable
     var validLastname=false;
