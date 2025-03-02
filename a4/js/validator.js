@@ -98,22 +98,22 @@ function emailValidation(){
 
 //PHONE
 Phone.addEventListener('blur', phoneValidation, false);
-function phoneValidation(){
-    var validPhone = false;
-    var errorMessages = "";
-    var phone = document.getElementById("phone").value;
-    
-    var numbers = /^[0-9]+$/;
-    
-    if (phone === "" || phone.length > 15 || !phone.match(numbers)) {
-        errorMessages += "<p>Invalid phone number. Must be numerical and maximum 15 digits.</p>";
-    } else {
-        validPhone = true;
+function phoneValidation() {
+        var validPhone = false;
+        var errorMessages = "";
+        var phone = document.getElementById("phone").value;
+        
+        var numbers = /^[0-9]+$/;
+
+        if (phone === "" || phone.length > 15 || !phone.match(numbers)) {
+            errorMessages += "<p>Invalid phone number. Must be numerical and cannot be greater than 15 digits.</p>";
+        } else {
+            validPhone = true;
+        }
+
+        document.getElementById("phoneError").innerHTML = errorMessages;
+        return validPhone;
     }
-    
-    document.getElementById("phoneError").innerHTML = errorMessages;
-    return validPhone;
-}
 
 
 //USERNAME
@@ -123,7 +123,7 @@ function usernameValidation(){
       var username = document.getElementById("Username").value;
       var errorMessages = "";
       if (username === "" || username.length > 12) {
-        errorMessages += "<p>Username is required and cannot exceed 12 characters</p>";
+        errorMessages += "<p>Username is required and cannot be greater than 12 characters</p>";
       } else {
         validUsername = true;
       }
@@ -138,7 +138,7 @@ function passwordValidation(){
       var password = document.getElementById("Password").value;
       var errorMessages = "";
       if (password === "" || password.length > 7) {
-        errorMessages += "<p>Password is required and cannot exceed 7 characters</p>";
+        errorMessages += "<p>Password is required and cannot be greater than 7 characters</p>";
       } else {
         validPassword = true;
       }
