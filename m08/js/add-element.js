@@ -2,14 +2,14 @@
             var input = document.getElementById("itemInput");
             var itemText = input.value.trim();
             
-            if (itemText !== "") {
-                var list = document.getElementById("todo");
-                var newItem = document.createElement("li");
-                newItem.textContent = itemText;
-                list.appendChild(newItem);
+           
+             var list = document.getElementById("todo");
+             var newItem = document.createElement("li");
+             newItem.textContent = itemText;
+             list.appendChild(newItem);
                 
-                input.value = "";
-            }
+             input.value = "";
+            
         }
 
 
