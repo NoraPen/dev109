@@ -9,6 +9,7 @@ function isValid() {
         return false;
 }
 
+// FIRST NAME
 FirstName.addEventListener('blur', firstName, false);
 function firstName(){
     //1) Create variable
@@ -38,6 +39,8 @@ function firstName(){
 };
 
 
+//LAST NAME 
+LastName.addEventListener('blur', lastName, false);
 function lastName(){
     //1) Create variable
     var validLastname=false;
@@ -54,7 +57,7 @@ function lastName(){
             errorMessages += "<p>Invalid character in last name (accepts only A-Z, a-z, and ,.'-)</p>";
             console.log("Last name invalid — bad characters")
         } else {
-                validLAstname = true;
+                validLastname = true;
                 console.log("Last name valid")
         };
 
