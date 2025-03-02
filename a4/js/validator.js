@@ -101,7 +101,7 @@ Phone.addEventListener('blur', phoneValidation, false);
 function phoneValidation() {
         var validPhone = false;
         var errorMessages = "";
-        var phone = document.getElementById("phone").value;
+        var phone = document.getElementById("Phone").value;
         
         var numbers = /^[0-9]+$/;
 
