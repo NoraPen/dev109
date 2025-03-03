@@ -178,7 +178,7 @@ function cityValidation(){
     }
 
 //STATE
-State.addEventListener('change', stateValidation, false);
+State.addEventListener('blur', stateValidation, false);
 function stateValidation(){
       var validState = false;
       var state = document.getElementById("State").value;
@@ -193,7 +193,7 @@ function stateValidation(){
     }
 
 //COUNTRY
-Country.addEventListener('change', countryValidation, false);
+Country.addEventListener('blur', countryValidation, false);
 function countryValidation(){
       var validCountry = false;
       var country = document.getElementById("Country").value;
