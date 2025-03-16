@@ -1,4 +1,4 @@
-var myImages =["images/dolphin1.awif", "images/dophin2.jpg", "images/dolphin3.jpg", "images/dolphin.jpg", "images/dolphin5.webp"];
+var myImages =["images/dolphin1.avif", "images/dophin2.jpg", "images/dolphin3.jpg", "images/dolphin4.jpg", "images/dolphin5.webp"];
 
 
 var captionImages =["Laugh","Love","Lunch","Happiness","Family"];
