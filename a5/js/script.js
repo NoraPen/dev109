@@ -1,7 +1,7 @@
-var myImages =["images/dolphin1.avif", "images/dophin2.jpg", "images/dolphin3.jpg", "images/dolphin4.jpg", "images/dolphin5.webp"];
+var myImages =["images/artifact1.png", "images/artifact2.png", "images/artifact3.png", "images/aftricat4.png", "images/dolphin5.webp"];
 
 
-var captionImages =["Laugh","Love","Lunch","Happiness","Family"];
+var captionImages =["Artifact 1 - This assignment focused on creating a resume, where we explored various types of headings and labels to format text. We also learned the importance of using images and incorporating alt text to ensure web accessibility.","Artifact 2 - We built a chessboard layout using the <div> element, practicing the arrangement of images and text. The assignment also involved using headers and footers to structure the webpage in an organized manner.","Artifact 3 - In this project, we used JavaScript to generate patterns using symbols. We also created an interactive experience where users could input data to modify these patterns, implementing dropdown menus, buttons, and functions to create dynamic shapes. ","Artifact 4 - This assignment involved creating and validating typical sign-up form fields, such as making sure phone numbers contained only digits. We focused on validating input to provide the correct information to the site.","Artifact 5 - Using JavaScript, we created an automatic slideshow (carousel) to display images. This project taught us how to use timers to automatically change images, along with building a countdown feature for transitions."];
 
 var index=0; 
 var time= 4;
