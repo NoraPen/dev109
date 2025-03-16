@@ -41,11 +41,15 @@ function autoSlide() {
 
  function timerStart(){
   timer = setInterval(function() {
-   document.getElementById("timer").textContent = "00:0" + (time < 10 ? "0" + time : time);
+   document.getElementById("timer").textContent = "00:" + (time < 10 ? "0" + time : time);
    time--;
    
    if (time <0) {
     time = 4;
+    if (document.getElementById("auto").checked) {
+        next(); 
+      }
+    }
    }
   }, 1000);
  }
