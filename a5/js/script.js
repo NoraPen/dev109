@@ -25,6 +25,13 @@ function back(){
  index=myImages.length-1;
  else
  index--;
+
+function autoSlide() {
+  if (document.getElementById("auto").checked) {
+    next();
+  }
+}
+
  
  updateImage();
 } 
