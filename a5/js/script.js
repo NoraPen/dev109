@@ -1,4 +1,4 @@
-var myImages =[/*"https://www.imms.org/images/dolphin_presentation/dolphin1.jpg", "http://cdn3.theeventchronicle.com/wp-content/uploads/2014/09/dolphin-intelligence.jpg",*/ "http://www.liveanimalslist.com/mammals/images/dolphin-in-water.jpg","http://i1151.photobucket.com/albums/o632/bowietvc15/Bowietvc15-2/DolphinsWallpaper2.jpg","http://i1151.photobucket.com/albums/o632/bowietvc15/funny%20gifs/animal-art-cute-dolphin-nature-Favimcom-311780.jpg"];
+var myImages =["images/dolphin1.awif", "images/dophin2.jpg", "images/dolphin3.jpg", "images/dolphin.jpg", "images/dolphin5.webp"];
 
 
 var captionImages =["Laugh","Love","Lunch","Happiness","Family"];
